@@ -1,0 +1,31 @@
+[
+  {
+    "name": "intract-track (queue)",
+    "method": "POST",
+    "url": "https://testnet.euclidswap.io/api/intract-track",
+    "headers": { "referer": "https://testnet.euclidswap.io/swap", "x-app-version": "2.0.0" },
+    "body": { "chain_uid": "{{chain_uid}}", "tx_hash": "{{tx_hash}}", "wallet_address": "{{wallet}}", "type": "swap" },
+    "delay_ms": 0
+  },
+  {
+    "name": "euclid txn track (indexer retry)",
+    "method": "POST",
+    "url": "https://testnet.api.euclidprotocol.com/api/v1/txn/track/swap",
+    "headers": { "referer": "https://testnet.euclidswap.io/" },
+    "body": { "chain": "{{chain_uid}}", "tx_hash": "{{tx_hash}}" },
+    "retries": 10,
+    "retry_delay_ms": 2000,
+    "retry_on_status": [500],
+    "retry_on_body_regex": "mongo: no documents",
+    "retry_on_success_body_regex": "is_completed\\\":false",
+    "delay_ms": 300
+  },
+  {
+    "name": "euclid txn track (final touch)",
+    "method": "POST",
+    "url": "https://testnet.api.euclidprotocol.com/api/v1/txn/track/swap",
+    "headers": { "referer": "https://testnet.euclidswap.io/" },
+    "body": { "chain": "{{chain_uid}}", "tx_hash": "{{tx_hash}}" },
+    "delay_ms": 400
+  }
+]

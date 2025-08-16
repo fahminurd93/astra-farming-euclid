@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "globals": {
+    "slippage_bps": 3000,
+    "partner_fee_bps": 10,
+    "headers": { "x_app_version": "2.0.0" },
+    "api": {
+      "routes_url": "https://testnet.api.euclidprotocol.com/api/v1/routes?limit=10",
+      "execute_url": "https://testnet.api.euclidprotocol.com/api/v1/execute/astro/swap",
+      "track_url": "https://testnet.api.euclidprotocol.com/api/v1/txn/track/swap",
+      "intract_url": "https://testnet.euclidswap.io/api/intract-track"
+    },
+    "destination_tokens": [
+      { "id": "euclid", "display": "EUCLID" },
+      { "id": "eth",    "display": "ETH"    }
+    ]
+  },
+  "chains": [
+    {
+      "chain_uid": "mantle",
+      "name": "Mantle",
+      "rpc_urls": [
+        "https://rpc.sepolia.mantle.xyz",
+        "https://mantle-testnet.public.blastapi.io"
+      ],
+      "native": { "id": "mnt", "display": "MNT", "denom": "mnt", "decimals": 18 },
+      "dest_token_allow": ["euclid","eth"]
+    },
+
+  
+
+    {
+      "chain_uid": "unichain",
+      "name": "Unichain Sepolia",
+      "rpc_urls": [
+        "https://sepolia.unichain.org"
+      ],
+      "native": {
+        "id": "eth",
+        "display": "ETH Uni",
+        "denom": "eth",
+        "decimals": 18
+      },
+      "dest_token_allow": ["euclid","ETH"]
+    },
+
+    {
+      "chain_uid": "plume",
+      "name": "Plume",
+      "rpc_urls": [
+        "https://testnet-rpc.plumenetwork.xyz"
+      ],
+      "native": {
+        "id": "plume",
+        "display": "Plume",
+        "denom": "plume",
+        "decimals": 18
+      },
+      "dest_token_allow": ["euclid","eth"]
+    },
+
+    {
+      "chain_uid": "somnia",
+      "name": "Somnia",
+      "rpc_urls": [
+        "https://dream-rpc.somnia.network"
+      ],
+      "native": {
+        "id": "stt",
+        "display": "STT",
+        "denom": "stt",
+        "decimals": 18
+      },
+      "dest_token_allow": ["euclid"]
+    },
+
+    {
+      "chain_uid": "0g",
+      "name": "0G",
+      "rpc_urls": [
+        "https://evmrpc-testnet.0g.ai/"
+      ],
+      "native": {
+        "id": "0g",
+        "display": "0G",
+        "denom": "0g",
+        "decimals": 18
+      },
+      "dest_token_allow": ["euclid"]
+    }
+    /* ==================== END OF TEMPLATE ====================
+    {
+      // === DUPLIKAT OBJEK INI LALU ISI FIELD2NYA ===
+      "chain_uid": "CHANGE_ME_UID",
+      "name": "Change Me (CHANGE_ME_UID)",
+      "rpc_urls": [
+        "https://rpc-utama.example.org",
+        "https://rpc-cadangan.example.org"
+      ],
+      "native": {
+        "id": "xxx",
+        "display": "XXX",
+        "denom": "xxx",
+        "decimals": 18
+      },
+      "dest_token_allow": ["euclid","eth"]
+    }
+    ==================== END OF TEMPLATE ==================== */
+  ]
+}
