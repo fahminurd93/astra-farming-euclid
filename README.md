@@ -1,3 +1,5 @@
+Tutorial Full here : https://t.me/AirdropShogun
+
 # Euclid CLI Swap (schema v2)
 
 CLI buat swap via Euclid API:
