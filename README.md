@@ -1,4 +1,4 @@
-Join information Airdrop : https://t.me/AirdropShogun
+Join for more information Airdrop : https://t.me/AirdropShogun
 
 TUTORIAL 
 
