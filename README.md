@@ -2,9 +2,14 @@ Join information Airdrop : https://t.me/AirdropShogun
 
 TUTORIAL 
 
-## Setup
+Make screen 
+```bash 
+screen -S euclidbot
+```
+clone repository
 ```bash
 git clone https://github.com/fahminurd93/astra-farming-euclid
+cd astra-farming-euclid
 ```
 
 ## Run
