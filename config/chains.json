@@ -12,6 +12,7 @@
     },
     "destination_tokens": [
       { "id": "euclid", "display": "EUCLID" },
+      { "id": "gimo", "display": "GIMO" },
       { "id": "eth",    "display": "ETH"    }
     ]
   },
@@ -73,6 +74,21 @@
       },
       "dest_token_allow": ["euclid"]
     },
+    
+    {
+      "chain_uid": "pharos",
+      "name": "pharos",
+      "rpc_urls": [
+        "https://testnet.dplabs-internal.com"
+      ],
+      "native": {
+        "id": "phrs",
+        "display": "PHRS",
+        "denom": "phrs",
+        "decimals": 18
+      },
+      "dest_token_allow": ["euclid"]
+    },
 
     {
       "chain_uid": "0g",
@@ -86,7 +102,7 @@
         "denom": "0g",
         "decimals": 18
       },
-      "dest_token_allow": ["euclid"]
+      "dest_token_allow": ["euclid","gimo"]
     }
     /* ==================== END OF TEMPLATE ====================
     {
