@@ -46,6 +46,22 @@
     },
 
     {
+      "chain_uid": "monad",
+      "name": "Monad Testnet",
+      "rpc_urls": [
+        "https://testnet-rpc.monad.xyz"
+      ],
+      "native": {
+        "id": "mon",
+        "display": "Monad",
+        "denom": "mon",
+        "decimals": 18
+      },
+      "dest_token_allow": ["euclid"]
+    },
+
+
+    {
       "chain_uid": "plume",
       "name": "Plume",
       "rpc_urls": [
